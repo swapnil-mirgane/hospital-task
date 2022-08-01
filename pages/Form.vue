@@ -30,7 +30,7 @@
           <br /><br />
           <div>
             <button
-              class="py-1 px-5 mr-5 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3"
+              class="py-1 px-5 mr-4 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3"
               type="submit"
               @click="formSubmit"
               id="btnsub"
@@ -38,7 +38,7 @@
               Submit
             </button>
             <button
-              class="py-1 px-5 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3"
+              class="py-1 px-4 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3"
               type="reset"
             >
               Reset

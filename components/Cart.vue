@@ -28,7 +28,10 @@ export default {
   },
   methods: {
     book() {
+      document.getElementById("cartBg").style = "border-color:red";
+      document.getElementById("btn").innerHTML = "Booked";
       location.href = "http://localhost:3000/Form";
+      document.getElementById("btn").innerHTML = "Booked";
     },
   },
 };
