@@ -3,10 +3,12 @@
     <table>
       <tr>
         <td>
-          <label for="user" class="m-5 p-5">User</label
-          ></td><td><select id="user"  class="bg-lime-500 m-5 p-5">
-            <option disabled >Select User</option>
-            <option value="Admin">Admin</option> 
+          <label for="user" class="m-5 p-5">User</label>
+        </td>
+        <td>
+          <select id="user" class="bg-lime-500 m-5 p-5">
+            <option disabled>Select User</option>
+            <option value="Admin">Admin</option>
             <option value="Staf">Staff</option>
           </select>
         </td>
