@@ -67,7 +67,7 @@ export default {
       event.preventDefault();
       var name = document.getElementById("firstname").value;
       var contact = document.getElementById("number").value;
-      alert(name + contact);
+      alert("data save");
       location.href = "http://localhost:3000/Home";
     },
     onReset(event) {
