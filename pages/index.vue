@@ -59,7 +59,7 @@ const loginDetails = reactive({
 function login() {
   if (loginDetails.userName == "swapnil" && loginDetails.pass == "swapnil") {
     alert("Login Successfull");
-    location.href = "http://localhost:3000/Home";
+    location.href = "http://localhost:3000/Loop";
   } else {
     alert("plz Enter User= swapnil  pass= swapnil");
   }
