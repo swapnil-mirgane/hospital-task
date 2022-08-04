@@ -1,6 +1,6 @@
 <template>
   <div id="hide">
-    <form class="flex flex-col w-1/2 m-auto" v-on:submit="preventDefault()">
+    <div class="flex flex-col w-1/2 m-auto">
       <label class="m-5" for="valisName"
         >name : <input type="text" id="valisName" v-model.lazy="cName" required
       /></label>
@@ -21,7 +21,7 @@
           cancel
         </button>
       </div>
-    </form>
+    </div>
   </div>
   <div>
     <div>
@@ -45,7 +45,7 @@
           @click="book(i)"
           class="bg-lime-400 border-2 p-2 border-black rounded-md ml-20 mb-5 hover:bg-lime-500"
         >
-          Book Now
+          BookNow
         </button>
       </div>
     </div>
@@ -69,9 +69,9 @@ export default {
     booked() {
       var s = document.getElementById("valisName").value;
       var cn = document.getElementById("num").value;
-
       if (s == "" && cn == "") {
         alert("name should not empty");
+        this.valis = false;
       }
       this.cName = s;
       this.cnum = cn;
@@ -79,12 +79,16 @@ export default {
       this.valis = true;
     },
     book(i) {
+      var s = document.getElementById(i);
       document.getElementById("hide").style = " visibility: visible;";
       var s = document.getElementById(i);
       if (this.valis == true) {
         s.style = " background-color: rgb(238, 15, 15);";
-        s.lastElementChild.innerHTML = "EditSlot";
+        s.lastElementChild.innerHTML = `<button @click="book">EditSlot</button>`;
+        s.firstElementChild.innerHTML += `<h1> name:${this.cName}</h1><br><h1>Number:${this.cnum}</h1>`;
         location.href = "#hide";
+        this.cName = "";
+        this.cnum = "";
       }
     },
     showSlots() {

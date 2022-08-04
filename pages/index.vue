@@ -24,6 +24,7 @@
               id="userName"
               v-model.lazys="loginDetails.userName"
               placeholder="UserName"
+              autofocus
             />
           </td>
         </tr>
@@ -33,7 +34,7 @@
             <input
               autocomplete="off"
               class="bg-lime-500 m-5 p-5"
-              type="passowrd"
+              type="password"
               v-model="loginDetails.pass"
               id="pass"
               placeholder="Enter the password"
